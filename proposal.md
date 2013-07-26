@@ -1,4 +1,4 @@
-# Proposal: `navigator.languages` API
+# Proposal: Locale Preferences API
 
 ## Abstract
 
@@ -85,7 +85,8 @@ that represents the user's most preferred language.
 
 If the user updates their locale preferences in such a way that it would cause
 the ordering of language tags change, then the user agent MUST perform the
-following steps:
+following steps. These steps use the DOM manipulation task source as the task
+source. 
 
 1. Let lang list be the updated list of preferred locales.
 
@@ -99,8 +100,6 @@ attribute` to be the first item lang list.
 same as those in lang list.
 
 2.3 Fire a simple event named "`languageschange`" at the `navigator` object.
-
-The task source for these steps is the DOM manipulation task source.
 
 ## Privacy considerations
 
