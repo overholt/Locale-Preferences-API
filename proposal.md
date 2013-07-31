@@ -115,7 +115,7 @@ thus this API does not exacerbate the finger-printing situation.
 
 Regardless, implementors are encouraged to reflect the value of
 navigator.language unless the user has explicitly indicated that the site in
-question is allowed access to the information.
+question is not allowed access to the information.
 
 ## Known usability issues
 
